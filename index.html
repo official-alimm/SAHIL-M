@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08080a" />
+  
+  <!-- SEO & Social Open Graph Tags -->
+  <title>Sahil &amp; Tasleema | Engagement Invitation</title>
+  <meta name="description" content="You are cordially invited to celebrate the engagement of Sahil &amp; Tasleema on 22 October 2026 in Kashmir." />
+  <meta property="og:title" content="Sahil &amp; Tasleema — Engagement Celebration" />
+  <meta property="og:description" content="Two families, one beautiful beginning. Join us to celebrate our engagement in the Kashmir Valley." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/photos/sahil-portrait-1.jpg" />
+
+  <!-- Google Fonts: Display Serifs & Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+  <!-- Ambient Golden Glows & Particles -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-glow glow-top-left"></div>
+    <div class="ambient-glow glow-center-right"></div>
+    <div class="ambient-glow glow-bottom-left"></div>
+  </div>
+
+  <!-- Persistent Background Audio Element (Never reloaded during SPA navigation) -->
+  <audio id="site-music" preload="auto" loop></audio>
+
+  <div class="app-container">
+
+    <!-- ======================================================================
+         TOP NAVIGATION BAR
+         ====================================================================== -->
+    <header class="topbar" id="site-topbar">
+      <a class="brand" href="#home" aria-label="Sahil and Tasleema Invitation Home">
+        <span class="brand-mark">S<span>✦</span>T</span>
+        <span class="brand-caption">SAHIL &amp; TASLEEMA</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="#home" data-en="Invitation" data-ur="دعوت نامہ">Invitation</a></li>
+          <li><a class="nav-link" href="#story" data-en="Our Story" data-ur="ہماری کہانی">Our Story</a></li>
+          <li><a class="nav-link" href="#celebration" data-en="The Day" data-ur="تقریب کا دن">The Day</a></li>
+          <li><a class="nav-link" href="#gallery" data-en="Gallery" data-ur="تصاویر">Gallery</a></li>
+          <li><a class="nav-link" href="#wishes" data-en="Wishes" data-ur="دعائیں">Wishes</a></li>
+          <li><a class="nav-link" href="#card" data-en="Card &amp; QR" data-ur="کارڈ">Card &amp; QR</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Bilingual Toggle -->
+        <button class="lang-btn" id="lang-toggle-btn" type="button" aria-label="Switch language to Urdu">اردو</button>
+        <!-- Primary Action -->
+        <a class="nav-cta" href="#rsvp" data-en="Kindly RSVP ↗" data-ur="شرکت کی اطلاع ↗">Kindly RSVP ↗</a>
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         MAIN CONTENT SECTIONS
+         ====================================================================== -->
+    <main id="main-content">
+
+      <!-- ==================================================================
+           1. CINEMATIC HERO SECTION
+           ================================================================== -->
+      <section class="hero" id="home">
+        <div class="hero-frame">
+          <!-- Ornate SVG Corners -->
+          <svg class="hero-corner hero-corner-tl" viewBox="0 0 80 80"><path d="M4 76L4 20C4 11.1634 11.1634 4 20 4L76 4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+          <svg class="hero-corner hero-corner-tr" viewBox="0 0 80 80"><path d="M4 76L4 20C4 11.1634 11.1634 4 20 4L76 4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+          <svg class="hero-corner hero-corner-bl" viewBox="0 0 80 80"><path d="M4 76L4 20C4 11.1634 11.1634 4 20 4L76 4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+          <svg class="hero-corner hero-corner-br" viewBox="0 0 80 80"><path d="M4 76L4 20C4 11.1634 11.1634 4 20 4L76 4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+
+          <!-- Bismillah Calligraphy -->
+          <p class="hero-bismillah" lang="ur" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="hero-sub-bismillah">In the name of Allah, the Most Gracious, the Most Merciful</p>
+
+          <p class="hero-kicker reveal" data-en="WITH THE BLESSINGS OF OUR FAMILIES" data-ur="اہلِ خانہ کی دعاؤں اور خوشیوں کے ساتھ">WITH THE BLESSINGS OF OUR FAMILIES</p>
+          <div class="ornament reveal">✦ ───────── ✦</div>
+
+          <p class="eyebrow reveal" data-en="CORDIALLY INVITE YOU TO CELEBRATE THE ENGAGEMENT OF" data-ur="کی باوقار منگنی کی تقریب میں شرکت کی دلی دعوت">CORDIALLY INVITE YOU TO CELEBRATE THE ENGAGEMENT OF</p>
+
+          <!-- Couple Names -->
+          <h1 class="hero-names reveal">Sahil <span class="amp">&amp;</span> Tasleema</h1>
+
+          <!-- Personalized Guest Welcome Banner -->
+          <div class="guest-welcome-banner" id="guest-welcome-banner">
+            <p class="guest-welcome-label">Warmly Welcoming Our Honoured Guest</p>
+            <p class="guest-welcome-name" id="guest-welcome-name">Guest</p>
+          </div>
+
+          <p class="hero-copy reveal" data-en="Two families, one beautiful beginning. We would be deeply honoured by your gracious presence, prayers and company as we celebrate this sacred milestone." data-ur="دو خاندان، ایک خوشگوار سفر کا آغاز۔ ہماری اس تقریب میں آپ کی شرکت اور دعائیں ہمارے لیے باعثِ فخر و مسرت ہوں گی۔">
+            Two families, one beautiful beginning. We would be deeply honoured by your gracious presence, prayers and company as we celebrate this sacred milestone.
+          </p>
+
+          <!-- Date & Time Badge -->
+          <div class="hero-badge-date reveal">
+            <span>THURSDAY</span>
+            <span class="divider"></span>
+            <strong>22 OCTOBER 2026</strong>
+            <span class="divider"></span>
+            <span>7:00 PM IST</span>
+          </div>
+
+          <!-- Live Countdown Clock -->
+          <div class="countdown-container reveal" aria-label="Countdown to 22 October 2026">
+            <div class="countdown-grid">
+              <div class="countdown-card">
+                <span class="countdown-val" id="countdown-days">--</span>
+                <span class="countdown-unit" data-en="DAYS" data-ur="دن">DAYS</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-card">
+                <span class="countdown-val" id="countdown-hours">--</span>
+                <span class="countdown-unit" data-en="HOURS" data-ur="گھنٹے">HOURS</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-card">
+                <span class="countdown-val" id="countdown-mins">--</span>
+                <span class="countdown-unit" data-en="MINUTES" data-ur="منٹ">MINUTES</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-card">
+                <span class="countdown-val" id="countdown-secs">--</span>
+                <span class="countdown-unit" data-en="SECONDS" data-ur="سیکنڈ">SECONDS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions reveal">
+            <a class="btn btn-gold" href="#celebration" data-en="Explore The Day ✦" data-ur="پروگرام دیکھیں ✦">Explore The Day ✦</a>
+            <button class="btn btn-outline hero-music-btn" type="button" aria-label="Play our engagement celebration song">
+              <span class="btn-icon">♫</span>
+              <span class="btn-label" data-en="Play Music ♫" data-ur="موسیقی چلائیں ♫">Play Music ♫</span>
+            </button>
+            <a class="btn btn-glass" href="#rsvp" data-en="Kindly RSVP ↗" data-ur="شرکت کی اطلاع دیں ↗">Kindly RSVP ↗</a>
+          </div>
+
+          <!-- Animated Scroll Cue -->
+          <div class="scroll-cue">
+            <div class="scroll-cue-mouse"></div>
+            <span data-en="SCROLL TO EXPLORE" data-ur="مزید تفصیلات دیکھیں">SCROLL TO EXPLORE</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           WELCOME & QURANIC BLESSING SECTION
+           ================================================================== -->
+      <section class="welcome-section section-wrap">
+        <p class="eyebrow reveal" data-en="A MOMENT TO REMEMBER" data-ur="ایک یادگار لمحہ">A MOMENT TO REMEMBER</p>
+        <h2 class="section-heading reveal" data-en="A new chapter, <em>a sacred beginning.</em>" data-ur="ایک نیا باب، <em>ایک مبارک آغاز۔</em>">
+          A new chapter, <em>a sacred beginning.</em>
+        </h2>
+        <p class="section-lead reveal">
+          With deep gratitude to the Almighty and the blessings of our elders, the families of Sahil and Tasleema warmly welcome you to join in an evening filled with warmth, prayers, laughter, and cherished memories.
+        </p>
+
+        <!-- Quranic Verse Card -->
+        <div class="quran-verse-card reveal">
+          <p class="quran-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+          <p class="quran-english">
+            "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy."
+          </p>
+          <span class="quran-citation">— Surah Ar-Rum (30:21)</span>
+        </div>
+
+        <!-- Three Pillars of Celebration -->
+        <div class="pillars-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-number">01</div>
+            <h3 class="pillar-title" data-en="The Sacred Bond" data-ur="مقدس رشتہ">The Sacred Bond</h3>
+            <p class="pillar-desc" data-en="An auspicious engagement marking the union of Sahil and Tasleema, built on mutual respect, love, and devotion." data-ur="ساحل اور تسلیمہ کا رشتہ، جو باہمی محبت، عزت اور خلوص پر قائم ہے۔">
+              An auspicious engagement marking the union of Sahil and Tasleema, built on mutual respect, love, and devotion.
+            </p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-number">02</div>
+            <h3 class="pillar-title" data-en="The Kashmir Valley" data-ur="وادیٔ کشمیر">The Kashmir Valley</h3>
+            <p class="pillar-desc" data-en="Set in the autumn paradise of Kashmir, surrounded by golden Chinar leaves, crisp mountain air, and scenic serenity." data-ur="کشمیر کی سنہری خزاں اور چناروں کے سائے میں سجی ایک دلکش شام۔">
+              Set in the autumn paradise of Kashmir, surrounded by golden Chinar leaves, crisp mountain air, and scenic serenity.
+            </p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-number">03</div>
+            <h3 class="pillar-title" data-en="The Wazwan Feast" data-ur="روایتی کشمیری وازوان">The Wazwan Feast</h3>
+            <p class="pillar-desc" data-en="Gathering around traditional copper tramis to savor the legendary Kashmiri Wazwan feast prepared by master wazas." data-ur="روایتی تسبیح و خوان، کشمیری وازوان اور اہلِ خانہ کی مہمان نوازی۔">
+              Gathering around traditional copper tramis to savor the legendary Kashmiri Wazwan feast prepared by master wazas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           2. OUR STORY SECTION
+           ================================================================== -->
+      <section class="story-section section-wrap" id="story">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="A NOTE FROM OUR HEARTS" data-ur="ایک دلی پیغام">A NOTE FROM OUR HEARTS</p>
+          <h2 class="section-heading reveal" data-en="Our <em>Story &amp; Milestones</em>" data-ur="ہماری <em>کہانی اور سنگِ میل</em>">
+            Our <em>Story &amp; Milestones</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            Every meaningful journey begins with destiny and the prayers of loving families.
+          </p>
+        </div>
+
+        <!-- Couple Spotlight with Real Photo of Sahil -->
+        <div class="couple-spotlight">
+          <!-- The Groom: Sahil -->
+          <div class="couple-card reveal">
+            <div class="couple-photo-wrapper">
+              <img class="couple-photo" src="assets/photos/sahil-portrait-1.jpg" alt="Sahil — The Groom" loading="lazy" />
+            </div>
+            <span class="couple-role" data-en="THE GROOM" data-ur="دولہا">THE GROOM</span>
+            <h3 class="couple-name">Sahil</h3>
+            <p class="couple-bio">
+              A thoughtful, warm-hearted, and steadfast gentleman whose devotion to family and kind character has earned the admiration of all. Eagerly stepping into this beautiful new chapter with Tasleema by his side.
+            </p>
+            <span class="status-tag status-attending" style="font-size: 0.75rem;">Son of the Malla Family</span>
+          </div>
+
+          <!-- The Bride: Tasleema -->
+          <div class="couple-card reveal">
+            <div class="couple-photo-wrapper">
+              <div class="couple-monogram-placeholder">T</div>
+            </div>
+            <span class="couple-role" data-en="THE BRIDE" data-ur="دلہن">THE BRIDE</span>
+            <h3 class="couple-name">Tasleema</h3>
+            <p class="couple-bio">
+              A woman of elegance, gentle warmth, and gracious spirit. Adored by her family for her kindness and radiant smile, bringing joy and harmony to this union between two loving families.
+            </p>
+            <span class="status-tag status-attending" style="font-size: 0.75rem;">Beloved Daughter</span>
+          </div>
+        </div>
+
+        <!-- Relationship & Milestone Timeline -->
+        <div class="timeline-track">
+          <div class="timeline-event reveal">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-phase">MILESTONE 01</span>
+                <span class="timeline-date">The Beginning</span>
+              </div>
+              <h4 class="timeline-title">When Paths Crossed &amp; Hearts Aligned</h4>
+              <p class="timeline-text">
+                Two families, guided by shared Islamic values and mutual respect, found common ground and recognized the beginning of a profound companionship for Sahil and Tasleema.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-event reveal">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-phase">MILESTONE 02</span>
+                <span class="timeline-date">The Formal Blessing</span>
+              </div>
+              <h4 class="timeline-title">The Thapbaer (Elder Consent &amp; Blessings)</h4>
+              <p class="timeline-text">
+                Surrounded by elders, saffron kahwa, and traditional sweets, both families came together to offer Duas and formalize the union with love and immense joy.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-event reveal">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-phase">MILESTONE 03</span>
+                <span class="timeline-date">22 October 2026</span>
+              </div>
+              <h4 class="timeline-title">The Engagement Ceremony (Nishani)</h4>
+              <p class="timeline-text">
+                The exchange of engagement rings under the autumn skies of Kashmir, celebrating with dear relatives, lifelong friends, and a feast of Wazwan.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-event reveal">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-phase">MILESTONE 04</span>
+                <span class="timeline-date">The Lifetime Ahead</span>
+              </div>
+              <h4 class="timeline-title">Towards the Sacred Nikah</h4>
+              <p class="timeline-text">
+                Looking forward with optimism, faith, and anticipation to their wedding ceremony and a prosperous lifetime of shared joys.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Sign-off Note -->
+        <div class="quran-verse-card reveal" style="margin-top: 3.5rem; text-align: center;">
+          <p class="eyebrow">WITH WARM REGARDS &amp; BLESSINGS</p>
+          <p style="font-family: var(--font-display); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 0.5rem;">
+            The Malla Family &amp; The Families of Sahil and Tasleema
+          </p>
+          <p style="font-size: 0.9rem; color: var(--ivory-muted);">
+            Kashmir Valley • Autumn 2026
+          </p>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           3. THE CELEBRATION / EVENT DETAILS
+           ================================================================== -->
+      <section class="celebration-section section-wrap" id="celebration">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="JOIN US FOR THE CELEBRATION" data-ur="تقریب کی تفصیلات">JOIN US FOR THE CELEBRATION</p>
+          <h2 class="section-heading reveal" data-en="The <em>Celebration Details</em>" data-ur="تقریب کی <em>مکمل تفصیلات</em>">
+            The <em>Celebration Details</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            We have reserved a special place for you. Here is everything you need to join us in Kashmir.
+          </p>
+        </div>
+
+        <!-- Main Event Card -->
+        <div class="event-details-card reveal">
+          <div class="event-main-grid">
+            <!-- Big Date Badge -->
+            <div class="date-large-badge">
+              <span class="date-badge-month">OCTOBER</span>
+              <span class="date-badge-day">22</span>
+              <span class="date-badge-year">THURSDAY • 2026</span>
+            </div>
+
+            <!-- Details Column -->
+            <div class="event-info-col">
+              <h3>Sahil &amp; Tasleema</h3>
+              <div class="event-info-row">
+                <span class="event-info-icon">◷</span>
+                <div>
+                  <strong>Time of Arrival &amp; Ceremony:</strong>
+                  <p>7:00 PM IST (Guests welcome from 6:30 PM)</p>
+                </div>
+              </div>
+
+              <div class="event-info-row">
+                <span class="event-info-icon">⌖</span>
+                <div>
+                  <strong>Location &amp; Venue:</strong>
+                  <p>Najan, Kashmir</p>
+                  <span class="venue-pending-tag">Exact venue in Kashmir will be announced soon by the family</span>
+                </div>
+              </div>
+
+              <div class="event-info-row">
+                <span class="event-info-icon">👔</span>
+                <div>
+                  <strong>Dress Code:</strong>
+                  <p>Kashmiri Traditional / Elegant Evening Formal (Pashmina, Velvet, Champagne Gold &amp; Black)</p>
+                </div>
+              </div>
+
+              <!-- Interactive Buttons -->
+              <div class="event-actions-bar">
+                <a class="btn btn-gold btn-sm" href="https://www.google.com/maps/search/?api=1&query=Najan%2C%20Kashmir" target="_blank" rel="noopener">
+                  Get Directions ↗
+                </a>
+                <button class="btn btn-outline btn-sm" id="btn-google-cal" type="button">
+                  ＋ Google Calendar
+                </button>
+                <button class="btn btn-outline btn-sm" id="btn-download-ics" type="button">
+                  📥 Download .ICS
+                </button>
+                <button class="btn btn-glass btn-sm" id="btn-copy-details" type="button">
+                  📋 Copy Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evening Schedule Timeline -->
+        <h3 style="font-family: var(--font-display); font-size: 1.5rem; text-align: center; color: var(--gold-light); margin-top: 3rem;" class="reveal">
+          The Evening Schedule
+        </h3>
+
+        <div class="schedule-grid">
+          <div class="schedule-card reveal">
+            <span class="schedule-time">6:30 PM</span>
+            <h4 class="schedule-title">Welcome &amp; Sharbat</h4>
+            <p class="schedule-desc">Warm arrival greetings, traditional saffron kahwa, and welcoming sharbat.</p>
+          </div>
+          <div class="schedule-card reveal">
+            <span class="schedule-time">7:00 PM</span>
+            <h4 class="schedule-title">Ring Ceremony</h4>
+            <p class="schedule-desc">The formal exchange of engagement rings accompanied by prayers and congratulations.</p>
+          </div>
+          <div class="schedule-card reveal">
+            <span class="schedule-time">7:45 PM</span>
+            <h4 class="schedule-title">Portraits &amp; Duas</h4>
+            <p class="schedule-desc">Cherished family photographs, elder blessings, and warm felicitations.</p>
+          </div>
+          <div class="schedule-card reveal">
+            <span class="schedule-time">8:15 PM</span>
+            <h4 class="schedule-title">Wazwan Banquet</h4>
+            <p class="schedule-desc">Traditional Kashmiri Wazwan feast served in copper tramis with heartfelt hospitality.</p>
+          </div>
+          <div class="schedule-card reveal">
+            <span class="schedule-time">9:30 PM</span>
+            <h4 class="schedule-title">Sufi Music &amp; Rouf</h4>
+            <p class="schedule-desc">Kashmiri celebratory songs, gentle music, and warm farewell wishes.</p>
+          </div>
+        </div>
+
+        <!-- Weather, Parking & Accessibility -->
+        <div class="logistics-grid">
+          <div class="logistics-card reveal">
+            <h4>🌤️ Kashmir October Weather</h4>
+            <p>
+              Late October in Kashmir offers crisp, refreshing autumn weather. Expect daytime temperatures around 18°C and cool evening temperatures dipping to 10°C - 13°C. Elegant warm layers and pashminas are encouraged.
+            </p>
+          </div>
+          <div class="logistics-card reveal">
+            <h4>🚗 Parking &amp; Valet</h4>
+            <p>
+              Ample parking with valet assistance will be available at the venue grounds for all invited guests.
+            </p>
+          </div>
+          <div class="logistics-card reveal">
+            <h4>♿ Accessibility &amp; Comfort</h4>
+            <p>
+              Step-free access, comfortable seating, and dedicated elder hospitality will be readily provided throughout the evening.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           4. PHOTO GALLERY SECTION
+           ================================================================== -->
+      <section class="gallery-section section-wrap" id="gallery">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="CAPTURED MOMENTS" data-ur="یادگار لمحات">CAPTURED MOMENTS</p>
+          <h2 class="section-heading reveal" data-en="Our <em>Photo Gallery</em>" data-ur="ہماری <em>تصویری گیلری</em>">
+            Our <em>Photo Gallery</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            Glimpses of joyful moments leading to our celebration. Click any image to view in full resolution.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" type="button" data-category="all">All Photos</button>
+          <button class="filter-btn" type="button" data-category="sahil">The Groom (Sahil)</button>
+          <button class="filter-btn" type="button" data-category="celebration">Celebration &amp; Rings</button>
+          <button class="filter-btn" type="button" data-category="kashmir">Kashmir Autumn</button>
+        </div>
+
+        <!-- Interactive Grid (Populated by app.js with real photos of Sahil) -->
+        <div class="gallery-grid" id="gallery-grid"></div>
+
+        <!-- Fullscreen Lightbox Modal -->
+        <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+          <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo">×</button>
+          <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo">‹</button>
+          <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next photo">›</button>
+
+          <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Gallery preview" />
+            <div class="lightbox-caption-bar">
+              <h3 class="lightbox-caption-text" id="lightbox-title"></h3>
+              <span class="lightbox-counter" id="lightbox-counter"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           5. GUEST WISHES & WALL OF LOVE
+           ================================================================== -->
+      <section class="wishes-section section-wrap" id="wishes">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="BLESSINGS &amp; CONGRATULATIONS" data-ur="نیک تمنائیں اور دعائیں">BLESSINGS &amp; CONGRATULATIONS</p>
+          <h2 class="section-heading reveal" data-en="Wall of <em>Love &amp; Duas</em>" data-ur="محبت اور <em>دعاؤں کی دیوار</em>">
+            Wall of <em>Love &amp; Duas</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            Leave your warm congratulations and heartfelt blessings for Sahil &amp; Tasleema.
+          </p>
+        </div>
+
+        <div class="wishes-layout">
+          <!-- Submission Form -->
+          <form class="wish-form-card reveal" id="wish-form">
+            <p class="eyebrow">WRITE A BLESSING</p>
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--ivory-white); margin-bottom: 1.25rem;">
+              Send Your <em>Good Wishes</em>
+            </h3>
+
+            <div class="form-group">
+              <label class="form-label" for="wish-name">Your Full Name *</label>
+              <input class="form-input" id="wish-name" name="name" type="text" placeholder="e.g. Uncle Rashid / Aamina" required maxlength="80" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wish-relation">Relationship / Location</label>
+              <input class="form-input" id="wish-relation" name="relation" type="text" placeholder="e.g. Family Friend / Cousin from Srinagar" maxlength="80" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wish-message">Your Message or Dua *</label>
+              <textarea class="form-textarea" id="wish-message" name="message" rows="4" placeholder="Write a blessing for Sahil &amp; Tasleema..." required maxlength="500"></textarea>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+                <span class="quick-blessings">
+                  <span class="quick-tag">Mubarak! 🎉</span>
+                  <span class="quick-tag">Barakallahu lakuma 🤲</span>
+                  <span class="quick-tag">Lots of love ❤️</span>
+                </span>
+                <span id="wish-char-count" style="font-size: 0.72rem; color: var(--text-muted);">500 chars left</span>
+              </div>
+            </div>
+
+            <button class="btn btn-gold" style="width: 100%; margin-top: 1rem;" type="submit">
+              Send Blessing ✦
+            </button>
+            <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
+              Wishes are saved instantly and shared with the family.
+            </p>
+          </form>
+
+          <!-- Live Wishes Feed -->
+          <div class="wishes-feed reveal" id="wishes-feed" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           6. RSVP EXPERIENCE
+           ================================================================== -->
+      <section class="rsvp-section section-wrap" id="rsvp">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="YOUR PRESENCE MATTERS" data-ur="آپ کی شرکت متوقع ہے">YOUR PRESENCE MATTERS</p>
+          <h2 class="section-heading reveal" data-en="Kindly <em>Respond (RSVP)</em>" data-ur="برائے مہربانی <em>اطلاع فرمائیں</em>">
+            Kindly <em>Respond (RSVP)</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            Please let us know if you will be celebrating with us by 15 October 2026.
+          </p>
+        </div>
+
+        <div class="rsvp-container">
+          <div class="rsvp-card reveal">
+            <div class="rsvp-note-box">
+              <strong>Family Notice:</strong> Your RSVP helps us arrange traditional tramis and hospitality for the Wazwan feast. Please confirm your expected attendance.
+            </div>
+
+            <form id="rsvp-form">
+              <!-- Attendance Radio Options -->
+              <div class="attendance-toggle">
+                <label class="attendance-opt selected" id="opt-accept">
+                  <input type="radio" name="attendance" value="Joyfully Accepts" checked />
+                  <span class="opt-icon">✨</span>
+                  <span class="opt-title">Joyfully Accepts</span>
+                  <span class="opt-desc">Will attend with pleasure</span>
+                </label>
+
+                <label class="attendance-opt" id="opt-decline">
+                  <input type="radio" name="attendance" value="Regretfully Declines" />
+                  <span class="opt-icon">💌</span>
+                  <span class="opt-title">Regretfully Declines</span>
+                  <span class="opt-desc">Sending prayers from afar</span>
+                </label>
+              </div>
+
+              <!-- Guest Name -->
+              <div class="form-group">
+                <label class="form-label" for="rsvp-guest-name">Full Name *</label>
+                <input class="form-input" id="rsvp-guest-name" name="name" type="text" placeholder="e.g. Dr. Ghulam Mohammad" required maxlength="90" />
+              </div>
+
+              <!-- Number of Attendees & Dietary -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                <div class="form-group">
+                  <label class="form-label" for="rsvp-guest-count">Total Guests Attending</label>
+                  <select class="form-select" id="rsvp-guest-count" name="count">
+                    <option value="1">1 Person</option>
+                    <option value="2" selected>2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="5+">5+ Persons (Family)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rsvp-dietary">Dietary Preference</label>
+                  <select class="form-select" id="rsvp-dietary" name="dietary">
+                    <option value="Traditional Kashmiri Wazwan" selected>Traditional Kashmiri Wazwan</option>
+                    <option value="Vegetarian Wazwan Special">Vegetarian Wazwan Special</option>
+                    <option value="Specific Allergies">Specific Dietary Requirements</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="form-group">
+                <label class="form-label" for="rsvp-phone">Phone or WhatsApp Number (Optional)</label>
+                <input class="form-input" id="rsvp-phone" name="phone" type="tel" placeholder="e.g. +91 9906000000" maxlength="25" />
+              </div>
+
+              <!-- Note -->
+              <div class="form-group">
+                <label class="form-label" for="rsvp-note">Note or Message for the Couple</label>
+                <textarea class="form-textarea" id="rsvp-note" name="note" rows="2" placeholder="Any special message or arrival notes..."></textarea>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 1.75rem;">
+                <button class="btn btn-gold" type="submit">
+                  Submit RSVP to Family ✦
+                </button>
+                <button class="btn btn-outline" id="btn-whatsapp-rsvp" type="button">
+                  💬 Send RSVP via WhatsApp Directly
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- RSVP Confirmation Pass Modal -->
+        <div class="rsvp-confirm-modal" id="rsvp-confirm-modal" role="dialog" aria-modal="true" aria-hidden="true">
+          <div class="rsvp-ticket">
+            <div class="ticket-seal">✦</div>
+            <h3 class="ticket-names">Sahil &amp; Tasleema</h3>
+            <p style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-primary);">ENGAGEMENT CELEBRATION PASS</p>
+            <div class="ornament">✦ ───── ✦</div>
+
+            <p class="ticket-guest" id="ticket-guest-name">Valued Guest</p>
+            <span class="status-tag status-attending" id="ticket-status">Joyfully Attending</span>
+
+            <div class="ticket-details-box">
+              <p><strong>Date:</strong> Thursday, 22 October 2026</p>
+              <p><strong>Time:</strong> 7:00 PM IST</p>
+              <p><strong>Location:</strong> Najan, Kashmir</p>
+              <p><strong>Party Size:</strong> <span id="ticket-attendees">2 Guests</span></p>
+              <p><strong>Dietary Choice:</strong> <span id="ticket-dietary">Traditional Kashmiri Wazwan</span></p>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--ivory-warm); margin-bottom: 1.5rem;">
+              Thank you for responding! The Malla Family looks forward to welcoming you with warmth in Kashmir.
+            </p>
+
+            <button class="btn btn-gold" id="confirm-modal-close" type="button">
+              Done ✦
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           7. DIGITAL INVITATION CARD & QR CODE
+           ================================================================== -->
+      <section class="card-sharing-section section-wrap" id="card">
+        <div style="text-align: center;">
+          <p class="eyebrow reveal" data-en="ELEGANT DIGITAL INVITATION" data-ur="ڈیجیٹل دعوت نامہ">ELEGANT DIGITAL INVITATION</p>
+          <h2 class="section-heading reveal" data-en="Invitation Card <em>&amp; QR Code</em>" data-ur="دعوت نامہ <em>اور کیو آر کوڈ</em>">
+            Invitation Card <em>&amp; QR Code</em>
+          </h2>
+          <div class="ornament reveal">✦ ───── ✦</div>
+          <p class="section-lead reveal">
+            Scan to open on your phone, download as a photo, or share directly with friends and family.
+          </p>
+        </div>
+
+        <div class="invitation-card-display reveal">
+          <div class="invitation-inner-border">
+            <p class="card-title-bismillah" lang="ur" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <p class="eyebrow">WITH JOYOUS HEARTS</p>
+            <h3 class="card-names">Sahil &amp; Tasleema</h3>
+            <p style="font-size: 0.95rem; color: var(--ivory-warm); margin-bottom: 1rem;">
+              Cordially invite you to celebrate their Engagement Ceremony
+            </p>
+            <p style="font-family: var(--font-display); font-size: 1.25rem; color: var(--gold-light); margin-bottom: 0.25rem;">
+              Thursday, 22 October 2026 • 7:00 PM
+            </p>
+            <p style="font-size: 0.85rem; color: var(--ivory-muted);">
+              Najan, Kashmir Valley
+            </p>
+
+            <!-- Dynamic Offline QR Code -->
+            <div class="qr-code-wrapper">
+              <canvas class="qr-code-canvas" id="qr-code-canvas"></canvas>
+            </div>
+            <p style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); text-transform: uppercase;">
+              SCAN TO OPEN INVITATION ON MOBILE
+            </p>
+          </div>
+
+          <div class="sharing-buttons-row">
+            <button class="btn btn-gold" id="btn-download-card" type="button">
+              📥 Download Card Image
+            </button>
+            <button class="btn btn-outline" id="btn-print-card" type="button">
+              🖨️ Print Card
+            </button>
+            <button class="btn btn-glass" id="btn-share-whatsapp" type="button">
+              💬 Share via WhatsApp
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           8. ADMINISTRATOR DASHBOARD
+           ================================================================== -->
+      <section class="admin-section section-wrap" id="admin">
+        <div style="text-align: center;">
+          <p class="eyebrow" data-en="HOST MANAGEMENT PORTAL" data-ur="انتظامی پورٹل">HOST MANAGEMENT PORTAL</p>
+          <h2 class="section-heading" data-en="Administrator <em>Dashboard</em>" data-ur="ایڈمن <em>ڈیش بورڈ</em>">
+            Administrator <em>Dashboard</em>
+          </h2>
+          <div class="ornament">✦ ───── ✦</div>
+          <p class="section-lead">
+            Manage RSVPs, export guest spreadsheets, moderate wishes, and customize live website settings.
+          </p>
+        </div>
+
+        <!-- PIN Login Screen -->
+        <div class="admin-login-card" id="admin-login-card">
+          <p class="eyebrow">SECURITY AUTHENTICATION</p>
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ivory-white); margin-bottom: 0.75rem;">
+            Host Security Verification
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--ivory-muted); margin-bottom: 1.5rem;">
+            Enter your private security PIN to access guest responses and controls.
+          </p>
+          <form id="admin-login-form">
+            <div class="form-group">
+              <input class="form-input" id="admin-pin-input" type="password" placeholder="Enter Host PIN (Default: sahil2026)" required style="text-align: center; letter-spacing: 3px;" />
+            </div>
+            <button class="btn btn-gold" style="width: 100%;" type="submit">
+              Unlock Dashboard ✦
+            </button>
+          </form>
+        </div>
+
+        <!-- Authenticated Dashboard View -->
+        <div class="admin-dashboard-panel" id="admin-dashboard-panel">
+          <!-- Live Analytics Metric Cards -->
+          <div class="admin-stats-grid">
+            <div class="admin-stat-card">
+              <div class="admin-stat-num" id="stat-total-rsvps">0</div>
+              <div class="admin-stat-label">Total Responses</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-num" id="stat-attending-rsvps" style="color: #2ecc71;">0</div>
+              <div class="admin-stat-label">Confirmed Attending</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-num" id="stat-declined-rsvps" style="color: #e74c3c;">0</div>
+              <div class="admin-stat-label">Regretfully Declined</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-num" id="stat-total-guests">0</div>
+              <div class="admin-stat-label">Total Guest Headcount</div>
+            </div>
+          </div>
+
+          <!-- Controls Toolbar -->
+          <div class="admin-toolbar">
+            <div style="display: flex; gap: 0.75rem; flex: 1; max-width: 500px;">
+              <input class="form-input" id="admin-search-input" type="text" placeholder="Search by guest name or phone..." />
+              <select class="form-select" id="admin-filter-status" style="width: 160px;">
+                <option value="all">All Responses</option>
+                <option value="attending">Attending Only</option>
+                <option value="declined">Declined Only</option>
+              </select>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <button class="btn btn-gold btn-sm" id="btn-export-csv" type="button">
+                📊 Export CSV Spreadsheet
+              </button>
+              <button class="btn btn-outline btn-sm" id="admin-logout-btn" type="button">
+                Logout
+              </button>
+            </div>
+          </div>
+
+          <!-- RSVPs Data Table -->
+          <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Guest Name</th>
+                  <th>Attendance</th>
+                  <th>Guests</th>
+                  <th>Dietary Choice</th>
+                  <th>Contact</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-rsvp-table-body"></tbody>
+            </table>
+          </div>
+
+          <!-- Live Website Settings Editor -->
+          <div class="quran-verse-card" style="margin-top: 3rem; text-align: left;">
+            <p class="eyebrow">SITE CONFIGURATION EDITOR</p>
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 1.25rem;">
+              Update Event Details
+            </h3>
+            <form id="admin-config-form">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="cfg-groom">Groom Name</label>
+                  <input class="form-input" id="cfg-groom" type="text" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cfg-bride">Bride Name</label>
+                  <input class="form-input" id="cfg-bride" type="text" />
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="cfg-date">Event Date &amp; Time (ISO)</label>
+                  <input class="form-input" id="cfg-date" type="text" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cfg-venue">Venue Name &amp; Area</label>
+                  <input class="form-input" id="cfg-venue" type="text" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cfg-whatsapp">Family WhatsApp Number (with Country Code)</label>
+                <input class="form-input" id="cfg-whatsapp" type="text" />
+              </div>
+              <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                <button class="btn btn-gold btn-sm" type="submit">Save Settings to Session</button>
+                <button class="btn btn-outline btn-sm" id="btn-download-config" type="button">Download Updated config.js</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================================
+         SITE FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="footer-brand">S ✦ T</div>
+      <p class="footer-credits">
+        Made with love and warm prayers for Sahil &amp; Tasleema
+      </p>
+      <div class="footer-links">
+        <a href="#home">Invitation</a>
+        <a href="#story">Our Story</a>
+        <a href="#celebration">The Celebration</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#wishes">Wishes</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#card">Invitation Card</a>
+      </div>
+      <div>
+        <a class="footer-admin-link" href="#admin">Host Administration 🔒</a>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <!-- ======================================================================
+         PROFESSIONAL PERSISTENT FLOATING MUSIC DOCK (VINYL DISC & CONTROLS)
+         ====================================================================== -->
+    <aside class="music-dock" id="music-dock" role="region" aria-label="Persistent background music controls">
+      <!-- Rotating Vinyl Disc -->
+      <div class="vinyl-disc-wrap" id="vinyl-disc-wrap" title="Tap to toggle music playback">
+        <div class="vinyl-disc" id="vinyl-disc">
+          <div class="vinyl-label">S✦T</div>
+        </div>
+      </div>
+
+      <!-- Soundwave Bars -->
+      <div class="sound-equalizer" id="sound-equalizer" aria-hidden="true">
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+      </div>
+
+      <!-- Track Information -->
+      <div class="music-dock-info">
+        <span class="music-dock-title">Celebration Theme</span>
+        <span class="music-dock-status" id="music-dock-status">Tap to Play</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="music-dock-controls">
+        <button class="music-btn music-btn-main" id="music-toggle-btn" type="button" aria-label="Play or Pause music">
+          <span id="music-toggle-icon">▶</span>
+        </button>
+        <button class="music-btn" id="popover-toggle" type="button" aria-label="Open audio volume and scrubber settings">
+          ⚙️
+        </button>
+      </div>
+
+      <!-- Popover Controls (Scrubber, Volume, Loop) -->
+      <div class="music-popover" id="music-popover">
+        <div class="scrubber-wrap">
+          <input class="music-scrubber" id="music-scrubber" type="range" min="0" max="100" value="0" step="0.1" aria-label="Audio playback scrubber" />
+          <div class="time-row">
+            <span id="time-current">0:00</span>
+            <span id="time-duration">--:--</span>
+          </div>
+        </div>
+
+        <div class="volume-row">
+          <button class="music-btn" id="mute-toggle" type="button" aria-label="Mute or Unmute audio" style="width: 24px; height: 24px;">
+            <span id="mute-icon">🔊</span>
+          </button>
+          <input class="volume-slider" id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Music volume slider" />
+          <button class="music-btn" id="loop-toggle" type="button" title="Toggle repeat loop" aria-label="Repeat track" style="width: 24px; height: 24px;">
+            🔁
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ======================================================================
+         AUTOPLAY OVERLAY ("TAP TO BEGIN OUR CELEBRATION")
+         Appears gracefully if browser blocks unmuted audio on first load
+         ====================================================================== -->
+    <div class="celebration-overlay" id="celebration-overlay" role="dialog" aria-modal="true">
+      <div class="celebration-dialog">
+        <div class="dialog-seal">S✦T</div>
+        <p class="hero-bismillah" style="font-size: 1.5rem; margin-bottom: 0.25rem;">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <h2>Sahil &amp; Tasleema</h2>
+        <p class="eyebrow" style="margin-bottom: 1rem;">ENGAGEMENT CELEBRATION IN KASHMIR</p>
+        <p>
+          We invite you to experience our special invitation with traditional celebration music.
+        </p>
+
+        <div class="dialog-actions">
+          <button class="btn btn-gold" id="enter-with-music-btn" type="button">
+            ♫ Enter &amp; Play Celebration Music
+          </button>
+          <button class="btn btn-glass" id="enter-silently-btn" type="button">
+            Enter Silently
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts: Config followed by Engine -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
